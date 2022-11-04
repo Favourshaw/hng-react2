@@ -1,0 +1,15 @@
+
+.container {
+    overflow: hidden;
+    }
+@media only screen and (max-width: 574px) {
+  .row {
+    flex-direction: column;
+   
+  }
+}
+
+.col, .row, input, .container {
+        box-sizing: border-box !important;
+   
+}
