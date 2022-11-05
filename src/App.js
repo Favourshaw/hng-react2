@@ -14,11 +14,13 @@ function App() {
       <Route path='/contact' element={<Contact />} />
     </Routes>
 
-    <footer className="footer">
+    <footer className="footer"><br /><br />
       <div className="footer-container">
+         
         <div className="flex"><img className="fimg" src="images/zintern.svg" alt="Avatar" /></div>
         <div className="flex"><p className="footertext">HNG Internship 9 Frontend Task</p></div>
         <div className="flex"><img className="fimg" src="images/i4g.svg" alt="Avatar" /></div>
+      
       </div>
     </footer>
     </>

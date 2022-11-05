@@ -1,6 +1,16 @@
 *, ::after, ::before {
   box-sizing: inherit !important;
 }
+
+a {
+  
+  text-decoration: none !important;
+}
+
+p {
+   margin-top: 1rem !important; 
+  margin-bottom: 1rem;
+}
 .topnav {
   overflow: hidden;
   background-color: white;
@@ -164,14 +174,21 @@ color: #101828;
    background-color: white;
    color: #555;
    text-align: center;
+   padding:140px 0px 0px ;
+   
 }
 
 .footer-container {
+  
    margin:0 auto;
   display: flex;
   justify-content: center;
   flex-direction: row;
-  padding: 48px 0px;
+  padding: 32px 0px 0px;
+  box-sizing: border-box;
+  border-top: 1px solid #EAECF0;
+  width: 90%;
+  
   
 }
 
@@ -179,12 +196,19 @@ color: #101828;
   width: 33.33%;
   padding: 24px 0px;
   justify-content: center;
+  
   }
+
   
  @media (max-width: 800px) {
   .footer-container {
     flex-direction: column;
-    padding: 150px 0px;
+    padding: 30px 0px;
+  }
+
+  .footer {
+    padding: 130px 0px 0px;
+     
   }
   .footertext{
     width: 260px;

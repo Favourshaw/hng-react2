@@ -15,30 +15,30 @@ export function Contact() {
     <div className="row " >
       <div className="col mb-3 mt-3">
       <label for="fname">First name</label>
-        <input type="text" className="form-control" id='first_name' placeholder="Enter your first name" {...register("fname")} />
+        <input type="text" className="form-control" id='first_name' placeholder="Enter your first name" {...register("fname")} required/>
       </div>
       <div className="col mb-3 mt-3">
       <label for="lname">Last name</label>
-        <input type="text" className="form-control" id='last_name' placeholder="Enter your last name" {...register("lname")} />
+        <input type="text" className="form-control" id='last_name' placeholder="Enter your last name" {...register("lname")} required/>
       </div>
     </div>
     
     <div className="row">
       <div className="col mb-3 mt-3">
       <label for="email">Email</label>
-        <input type="text" className="form-control" id='email' placeholder="yourname@email.com" {...register("email")} />
+        <input type="text" className="form-control" id='email' placeholder="yourname@email.com" {...register("email")} required/>
       </div>
     </div>
     
     <div className="row">
       <div className="col mb-3 mt-3">
         <label for="message">Message</label>
-<textarea className="form-control" rows="5" id="message" {...register("message")} placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
+<textarea className="form-control" rows="5" id="message" {...register("message")} placeholder="Send me a message and I'll reply you as soon as possible..." required></textarea>
       </div>
     </div>
     
     <div className="form-check mb-3 mt-3">
-      <input type="checkbox" className="form-check-input" id="check2" {...register("chk")} value="something" />
+      <input type="checkbox" className="form-check-input" id="check2" {...register("chk")} value="something" required/>
       <label className="form-check-label" for="check2">You agree to providing your data to Favour who may contact you.</label>
     </div>
     
