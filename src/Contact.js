@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Contact.css';
 import { useForm } from 'react-hook-form'
 
@@ -23,14 +23,26 @@ export function Contact() {
         }, false)
       })
   })()
-    const {register, handleSubmit} = useForm();
-    const onSubmit = (d) =>
-    alert(JSON.stringify(d));
+  const [successMsg, setSuccessMsg] = useState("");
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    setSuccessMsg("Your Request has been submitted, I'll get back to you soon");
+    reset();
+  };
     return (
         <div className="container mt-5 pt-5 col-sm-6" >
+          {successMsg && <p className="success-msg">{successMsg}</p>}
   <h2>Contact Me</h2><br />
   <p>Hi there, contact me to ask me about anything you have in mind.</p>
   <form onSubmit={handleSubmit(onSubmit)} class="was-validated" >
+  
     <div className="row " >
       <div className="col mb-3 mt-3">
       <label for="fname">First name</label>

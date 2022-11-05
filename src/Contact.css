@@ -96,6 +96,7 @@ input[type=email].is-invalid:focus, .was-validated input[type=email]:invalid:foc
   color: #555 !important;
 }
 
+
 .txt.invalid-feedback {
   
   width: 100% !important;
@@ -109,7 +110,7 @@ input[type=email].is-invalid:focus, .was-validated input[type=email]:invalid:foc
 }
 
 .form-check-input.is-valid, .was-validated .form-check-input:valid {
-  border-color:#0d6efd !important;
+  border-color:#ccc !important;
 }
 
 .form-check-input.is-valid:checked, .was-validated .form-check-input:valid:checked {
