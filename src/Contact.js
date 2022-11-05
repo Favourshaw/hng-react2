@@ -28,28 +28,29 @@ export function Contact() {
     alert(JSON.stringify(d));
     return (
         <div className="container mt-5 pt-5 col-sm-6" >
-  <h2>Contact Me</h2>
+  <h2>Contact Me</h2><br />
   <p>Hi there, contact me to ask me about anything you have in mind.</p>
   <form onSubmit={handleSubmit(onSubmit)} class="was-validated" >
     <div className="row " >
       <div className="col mb-3 mt-3">
       <label for="fname">First name</label>
-        <input type="text" className="form-control"  id='first_name'  {...register("fname")} required/>
+        <input type="text" className="form-control"  id='first_name' placeholder="Enter your first name" {...register("fname")} required/>
         
-      <div class="invalid-feedback">Please fill out this field.</div>
+      <div class="invalid-feedback">Please Enter Your First Name.</div>
       </div>
       <div className="col mb-3 mt-3">
       <label for="lname">Last name</label>
         <input type="text" className="form-control" id='last_name' placeholder="Enter your last name" {...register("lname")} required/>
         
-      <div class="invalid-feedback">Please fill out this field.</div>
+      <div class="invalid-feedback">Please Enter Your Last Name.</div>
       </div>
     </div>
     
     <div className="row">
       <div className="col mb-3 mt-3">
       <label for="email">Email</label>
-        <input type="text" className="form-control" id='email' placeholder="yourname@email.com" {...register("email")} required/>
+        <input type="email" className="form-control" id='email' placeholder="yourname@email.com" {...register("email")} required/>
+        <div class="invalid-feedback">Please Enter Your Email Address.</div>
       </div>
     </div>
     
